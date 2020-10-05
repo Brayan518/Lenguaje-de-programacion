@@ -1,0 +1,28 @@
+// REALIZADO POR BEAYAN ALEXIS RPJAS MILA
+// 03/10/2020
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main ()
+{
+    int x1, x2, a, b, c;
+    
+   printf ("INGRESA LA PRIMERA VARIABLE: \n");
+    scanf ("%lf", &a);
+    printf ("INGRESA LA SEGUNDA VARIABLE: \n");
+    fflush (stdin);
+
+    scanf ("%lf", &b);
+    printf ("INGRESA LA TERCER VARIABLE: \n");
+    fflush (stdin);
+    
+    scanf ("%lf", & c);
+     x1 = ((- b + sqrt (pow (b, 2) - (4 * a * c))) / (2 * a));
+     x2 = ((- b-sqrt (pow (b, 2) - (4 * a * c))) / (2 * a));
+
+    printf ("EL VALOR DE  x1 ES: %lf \n", x1);
+    printf ("EL VALOR DE x2 ES: %lf \n", x2);
+    
+    return 0;
+}
